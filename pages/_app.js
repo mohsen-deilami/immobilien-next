@@ -48,13 +48,19 @@ export default function App({ Component, pageProps }) {
 
       <header className="header">
         <img src="img/logo.png" alt="Nexter Logo" className="header__logo" />
-        <h3 className="u-heading-3 u-heading--light">خانه خودتان:</h3>
-        <h1 className="u-heading-1">با خرید خانه نهایت آزادی را احساس کنید</h1>
+        <h3 className="u-heading-3 u-heading--light">
+        Your own home:
+          </h3>
+        <h1 className="u-heading-1">
+        Feel the ultimate freedom by buying a home.
+          </h1>
         <button className="btn header__btn btn-brown">
-          املاک ما را مشاهده کنید
+        View our properties
         </button>
 
-        <p className="seeon__text">دیده می شود در</p>
+        <p className="seeon__text">
+        Seen in
+          </p>
         <figure className="seeon__box-img">
           <img src="img/logo-bbc.png" alt="BBC" className="seeon__img" />
           <img src="img/logo-bi.png" alt="BBC" className="seeon__img" />
