@@ -20,27 +20,27 @@ export default function App({ Component, pageProps }) {
         <ul className="list">
           <li className="list__item">
             <a href="index.html" className="list__link">
-              صفحه اصلی
+              Home Page
             </a>
           </li>
           <li className="list__item">
             <a href="#" className="list__link">
-              ویژگی ها
+            Features
             </a>
           </li>
           <li className="list__item">
             <a href="" className="list__link">
-              نظرات
+            Comments
             </a>
           </li>
           <li className="list__item">
             <a href="houses.html" className="list__link">
-              خانه ها
+              Homes
             </a>
           </li>
           <li className="list__item">
             <a href="#" className="list__link">
-              گالری
+              Gallery
             </a>
           </li>
         </ul>
