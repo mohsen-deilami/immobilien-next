@@ -1,8 +1,18 @@
-import styles from "@/styles/Home.module.css";
+import Features from "@/components/templates/index/Features";
+import Gallery from "@/components/templates/index/Gallery";
+import Homes from "@/components/templates/index/Homes";
+import Story from "@/components/templates/index/Story";
+import React from "react";
 
-
-export default function index() {
+function index() {
   return (
-  <h1>Homepage</h1>
+    <>
+      <Features />
+      <Story />
+      <Homes />
+      <Gallery />
+    </>
   );
 }
+
+export default index;
