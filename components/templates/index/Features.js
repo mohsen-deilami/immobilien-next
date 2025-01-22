@@ -7,11 +7,11 @@ function Features() {
         <span className="featur__icon">
           <i className="fa fa-globe"></i>
         </span>
-        <h4 className="u-heading--dark">بهترین خانه های لوکس جهان</h4>
+        <h4 className="u-heading--dark">The best luxury homes in the world </h4>
         <p className="u-paragraph">
-          نکته بعدی در مورد متن ساختگی لورم ایپسوم این است که بعضی از طراحان
-          وبسایت و گرافیست کاران بعد از آنکه قالب و محتوای مورد نظرشون را ایجاد
-          کردند
+          The next thing about the Lorem Ipsum fake text is that some website
+          designers and graphic artists, after they have created the template
+          and content they want,
         </p>
       </div>
 
@@ -19,53 +19,55 @@ function Features() {
         <span className="featur__icon">
           <i className="fa fa-map-marker"></i>
         </span>
-        <h4 className="u-heading--dark">همه خانه ها در مکان های برتر</h4>
+        <h4 className="u-heading--dark">All homes in prime locations</h4>
         <p className="u-paragraph">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          Lorem Ipsum is a fabricated text produced by the printing industry
+          with the help of graphic designers.
         </p>
       </div>
       <div className="featur">
         <span className="featur__icon">
           <i className="fa fa-key"></i>
         </span>
-        <h4 className="u-heading--dark">خانه جدید در یک هفته</h4>
+        <h4 className="u-heading--dark">New house in a week</h4>
         <p className="u-paragraph">
-          ز آنجا که لورم ایپسوم، شباهت زیادی به متن های واقعی دارد، طراحان
-          معمولا از لورم ایپسوم استفاده میکنند تا فقط به مشتری یا کار فرما نشان
-          دهند که قالب طراحی شده
+          Because Lorem Ipsum closely resembles real text, designers often use
+          Lorem Ipsum to simply show a client or employer that the design is
+          authentic.{" "}
         </p>
       </div>
       <div className="featur">
         <span className="featur__icon">
           <i className="fa fa-bar-chart-o"></i>
         </span>
-        <h4 className="u-heading--dark">فقط بهترین خواص</h4>
+        <h4 className="u-heading--dark">Only the best properties</h4>
         <p className="u-paragraph">
-          تا فقط به مشتری یا کار فرما نشان دهند که قالب طراحی شده بعد از اینکه
-          متن در آن قرار میگرد چگونه خواهد بود و فونت ها و اندازه ها چگونه در
-          نظر گرفته شده است.
+          To only show the client or employer what the designed template will
+          look like after the text is placed in it and how the fonts and sizes
+          have been considered.
         </p>
       </div>
       <div className="featur">
         <span className="featur__icon">
           <i className="fa fa-lock"></i>
         </span>
-        <h4 className="u-heading--dark">پرداخت های ایمن در بعدی</h4>
+        <h4 className="u-heading--dark">Secure payments in the future</h4>
         <p className="u-paragraph">
-          ر نتیجه طرح کلی دید درستی به کار فرما نمیدهد. اگر طراح بخواهد دنبال
-          متن های مرتبط بگردد تمرکزش از روی کار اصلی برداشته میشود و اینکار زمان
-          بر خواهد بود.
+          As a result, the overall design does not give the user the right
+          perspective. If the designer tries to search for related texts, his
+          focus will be taken away from the main task and this will be time
+          consuming.{" "}
         </p>
       </div>
       <div className="featur">
         <span className="featur__icon">
           <i className="fa fa-trophy"></i>
         </span>
-        <h4 className="u-heading--dark">1% مشاوران املاک برتر</h4>
+        <h4 className="u-heading--dark">Top 1% Real Estate Agents</h4>
         <p className="u-paragraph">
-          همچنین طراح به دنبال این است که پس از ارایه کار نظر دیگران را در مورد
-          طراحی جویا شود و نمی‌خواهد افراد روی متن های موجود تمرکز کنند.
+          The designer also seeks to ask others for their opinions on the design
+          after presenting the work and does not want people to focus on the
+          existing texts.{" "}
         </p>
       </div>
     </div>
