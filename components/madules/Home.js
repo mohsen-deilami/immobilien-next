@@ -1,6 +1,7 @@
+import Link from "next/link";
 import React from "react";
 
-export default function Home({img ,  title,   location,  roomCount,  meterage,    price}) {
+export default function Home({id ,img ,  title,   location,  roomCount,  meterage,    price}) {
   return (
     <div className="card">
       <img src={img} alt="House 6" className="card__img" />
@@ -27,9 +28,9 @@ export default function Home({img ,  title,   location,  roomCount,  meterage,  
         <p className="card__text">price: {price} $ </p>
       </div>
 
-      <a href="#" className="btn btn-brown btn-card">
+      <Link href={`/homes/${id}`} className="btn btn-brown btn-card">
         View
-      </a>
+      </Link>
     </div>
   );
 }
