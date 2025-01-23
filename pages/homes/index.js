@@ -2,22 +2,27 @@ import React, { useState } from 'react'
 import db from "../../data/db.json"
 import Home from '@/components/madules/Home'
 export default function index() {
-    const [homes , setHomes]=useState(db.homes)
+    const [homes , setHomes]=useState(db.homes);
+    const [sort, setSort]=useState('');
 
     const searchHadler=searchValue=>{
         setHomes(db.homes.filter(home => home.title.toLowerCase().includes(searchValue)));
  
     }
+    const selectHandler=(value)=>{
+        setSort(value);
+        console.log(sort)
+    }
   return (
     <div className="home-section" id="houses">
     <div className="home-filter-search">
         <div className="home-filter">
-            <select name="" id="">
-                <option value="" >Select</option>
-                <option value="">Based on price</option>
-                <option value="">Based on the number of rooms</option>
-                <option value="">Based on address</option>
-                <option value="">Based on size</option>
+            <select name="" id="" onChange={event=>selectHandler(event.target.value)}>
+                <option value="-1" >Select</option>
+                <option value="price">Based on price</option>
+                <option value="rooms">Based on the number of rooms</option>
+                <option value="address">Based on address</option>
+                <option value="metrage">Based on size</option>
             </select>
         </div>
         <div className="home-search">
@@ -26,7 +31,7 @@ export default function index() {
     </div>
     <div className="homes">
         {!homes.length && <p className='null-result-search'>There are no results for your search......</p>}
-     {homes.slice(0, 6).map((home) => (
+     {homes.map((home) => (
             <Home key={home.id} {...home} />
           ))}
     </div>
