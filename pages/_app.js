@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
 
@@ -54,9 +55,9 @@ export default function App({ Component, pageProps }) {
         <h1 className="u-heading-1">
         Feel the ultimate freedom by buying a home.
           </h1>
-        <button className="btn header__btn btn-brown">
+        <Link href="/homes" className="btn header__btn btn-brown">
         View our properties
-        </button>
+        </Link>
 
         <p className="seeon__text">
         Seen in
