@@ -2066,6 +2066,12 @@ body {
   grid-column: 1 / -1;
   width: 100%;
 }
+.null-result-search{
+color:var(--color-primary);
+text-align: center;
+font-size: 26px;
+font-weight: 700;
+}
 /*finish Homes */
 
 

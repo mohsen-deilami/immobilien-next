@@ -3,7 +3,7 @@ import db from "../../data/db.json"
 import Home from '@/components/madules/Home'
 export default function index() {
     const [homes , setHomes]=useState(db.homes)
-   console.log(homes)
+
     const searchHadler=searchValue=>{
         setHomes(db.homes.filter(home => home.title.toLowerCase().includes(searchValue)));
  
@@ -21,10 +21,11 @@ export default function index() {
             </select>
         </div>
         <div className="home-search">
-            <input type="text" placeholder="Search... " onChange={e=>searchHadler(e.target.value)} />
+            <input type="text" placeholder="Search title... " onChange={e=>searchHadler(e.target.value)} />
         </div>
     </div>
     <div className="homes">
+        {!homes.length && <p className='null-result-search'>There are no results for your search......</p>}
      {homes.slice(0, 6).map((home) => (
             <Home key={home.id} {...home} />
           ))}
