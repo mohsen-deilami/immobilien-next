@@ -1,77 +1,132 @@
 {
-    "homes": [
-      {
-        "id": 1,
-        "title": "Villa house",
-        "img": "/img/house-1.jpeg",
-        "roomCount": 6,
-        "meterage": 250,
-        "price": 2000000,
-        "location": "Koeln"
-      },
-      {
-        "id": 2,
-        "title": "House for sale",
-        "img": "/img/house-2.jpeg",
-        "roomCount": 2,
-        "meterage": 98,
-        "price": 3000000,
-        "location":"Bon"
-      },
-      {
-        "id": 3,
-        "title":"Rented house",
-        "img": "/img/house-3.jpeg",
-        "roomCount": 1,
-        "meterage": 180,
-        "price": 2500000,
-        "location":"Madrid"
-      },
-      {
-        "id": 4,
-        "title": "Suite",
-        "img": "/img/house-4.jpeg",
-        "roomCount": 5,
-        "meterage": 210,
-        "price": 500000,
-        "location":"London"
-      },
-      {
-        "id": 5,
-        "title": "Garden",
-        "img": "/img/house-5.jpeg",
-        "roomCount": 8,
-        "meterage": 290,
-        "price": 1200000,
-        "location":"Paris"
-      },
-      {
-        "id": 6,
-        "title": "Apartment unit",
-        "img": "/img/house-6.jpeg",
-        "roomCount": 2,
-        "meterage": 150,
-        "price": 800000,
-        "location":"Leverkusen"
-      },
-      {
-        "id": 7,
-        "title":"Villa house",
-        "img": "/img/house-1.jpeg",
-        "roomCount": 5,
-        "meterage": 300,
-        "price": 2200000,
-        "location":"Moskov"
-      },
-      {
-        "id": 8,
-        "title": "Rented house",
-        "img": "/img/house-2.jpeg",
-        "roomCount": 3,
-        "meterage": 200,
-        "price": 5000000,
-        "location":"Wien"
-      }
-    ]
-  }
-  
+  "homes": [
+    {
+      "id": 1,
+      "title": "Villa house",
+      "img": "/img/house-1.jpeg",
+      "roomCount": 6,
+      "meterage": 250,
+      "price": 2000000,
+      "location": "Koeln",
+      "code": "VL-6Kl",
+      "manufacture": "1972",
+      "type": "Villa",
+      "address": "Koeln st. 14",
+      "tags":"To buy",
+      "offer":"Special",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 2,
+      "title": "House for sale",
+      "img": "/img/house-2.jpeg",
+      "roomCount": 2,
+      "meterage": 98,
+      "price": 3000000,
+      "location": "Bon",
+      "code": "HS-2BN",
+      "manufacture": "1986",
+      "type": "House",
+      "address": "Bon st. 17",
+      "tags":"To buy",
+      "offer":"Normal",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 3,
+      "title": "Rented house",
+      "img": "/img/house-3.jpeg",
+      "roomCount": 1,
+      "meterage": 180,
+      "price": 2500000,
+      "location": "Madrid",
+      "code": "RtT-1MR",
+      "manufacture": "2013",
+      "type": "House",
+      "address": "Madrid st. 123",
+      "tags":"For rent",
+      "offer":"Normal",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 4,
+      "title": "Suite",
+      "img": "/img/house-4.jpeg",
+      "roomCount": 5,
+      "meterage": 210,
+      "price": 500000,
+      "location": "London",
+      "code": "ST-5LD",
+      "manufacture": "2021",
+      "type": "Suite",
+      "address": "London st. 217",
+      "tags":"For rent",
+      "offer":"Special",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 5,
+      "title": "Garden",
+      "img": "/img/house-5.jpeg",
+      "roomCount": 8,
+      "meterage": 290,
+      "price": 1200000,
+      "location": "Paris",
+      "code": "GR-8PS",
+      "manufacture": "1995",
+      "type": "Garden",
+      "address": "Paris st. 121",
+      "tags":"For rent",
+      "offer":"Normal",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 6,
+      "title": "Apartment unit",
+      "img": "/img/house-6.jpeg",
+      "roomCount": 2,
+      "meterage": 150,
+      "price": 800000,
+      "location": "Leverkusen",
+      "code": "AP-2LV",
+      "manufacture": "2019",
+      "type": "Apartment",
+      "address": "Leverusen st. 321",
+      "tags":"To buy",
+      "offer":"Special",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 7,
+      "title": "Villa house",
+      "img": "/img/house-1.jpeg",
+      "roomCount": 5,
+      "meterage": 300,
+      "price": 2200000,
+      "location": "Moskov",
+      "code": "VL-5MS",
+      "manufacture": "1998",
+      "type": "Villa",
+      "address": "Moskov st. 41",
+      "tags":"To buy",
+      "offer":"Super special",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 8,
+      "title": "Rented house",
+      "img": "/img/house-2.jpeg",
+      "roomCount": 3,
+      "meterage": 200,
+      "price": 5000000,
+      "location": "Wien",
+      "code": "RT-3WN",
+      "manufacture": "2003",
+      "type": "House",
+      "address": "Wien st. 141",
+      "tags":"For rent",
+      "offer":"Super special",
+      "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    }
+  ]
+}

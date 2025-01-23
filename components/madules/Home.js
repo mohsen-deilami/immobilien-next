@@ -25,7 +25,7 @@ export default function Home({id ,img ,  title,   location,  roomCount,  meterag
         <span className="">
           <i className="fa fa-key card__icon"></i>
         </span>
-        <p className="card__text">price: {price} $ </p>
+        <p className="card__text">price: {price?.toLocaleString()} $ </p>
       </div>
 
       <Link href={`/homes/${id}`} className="btn btn-brown btn-card">
