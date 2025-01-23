@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }) {
       </div>
 
       <header className="header">
-        <img src="img/logo.png" alt="Nexter Logo" className="header__logo" />
+        <img src="/img/logo.png" alt="Nexter Logo" className="header__logo" />
         <h3 className="u-heading-3 u-heading--light">
         Your own home:
           </h3>
@@ -62,10 +62,10 @@ export default function App({ Component, pageProps }) {
         Seen in
           </p>
         <figure className="seeon__box-img">
-          <img src="img/logo-bbc.png" alt="BBC" className="seeon__img" />
-          <img src="img/logo-bi.png" alt="BBC" className="seeon__img" />
-          <img src="img/logo-forbes.png" alt="BBC" className="seeon__img" />
-          <img src="img/logo-techcrunch.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-bbc.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-bi.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-forbes.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-techcrunch.png" alt="BBC" className="seeon__img" />
         </figure>
       </header>
 
@@ -75,7 +75,7 @@ export default function App({ Component, pageProps }) {
           </p>
         <div className="real-tors__list">
           <img
-            src="img/realtor-1.jpeg"
+            src="/img/realtor-1.jpeg"
             alt="real-tors top 1"
             className="real-tors__img"
           />
@@ -85,7 +85,7 @@ export default function App({ Component, pageProps }) {
           </div>
 
           <img
-            src="img/realtor-2.jpeg"
+            src="/img/realtor-2.jpeg"
             alt="real-tors top 2"
             className="real-tors__img"
           />
@@ -95,7 +95,7 @@ export default function App({ Component, pageProps }) {
           </div>
 
           <img
-            src="img/realtor-3.jpeg"
+            src="/img/realtor-3.jpeg"
             alt="real-tors top 3"
             className="real-tors__img"
           />
