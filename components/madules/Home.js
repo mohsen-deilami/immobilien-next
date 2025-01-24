@@ -1,5 +1,7 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExpand, faHeart, faKey, faLocationDot, faMapMarker, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home({id ,img ,  title,   location,  roomCount,  meterage,    price}) {
   return (
@@ -7,23 +9,28 @@ export default function Home({id ,img ,  title,   location,  roomCount,  meterag
       <img src={img} alt="House 6" className="card__img" />
       <h5 className="card__title">{title} </h5>
       <span className="card__like">
-        <i className="fa fa-heart"></i>
+       
+          <FontAwesomeIcon icon={faHeart} className="card__icon"/>
       </span>
       <div className="card__details">
-        <span className="">
-          <i className="fa fa-map-marker card__icon"></i>
-        </span>
+      <span className="">
+
+        <FontAwesomeIcon icon={faLocationDot} className="card__icon"/>
+      </span>
+
         <p className="card__text">Location : {location}</p>
+
         <span className="">
-          <i className="fa fa-user card__icon"></i>
+            <FontAwesomeIcon icon={faUser} className="card__icon"/>
         </span>
         <p className="card__text">Rooms : {roomCount} </p>
+        
         <span className="">
-          <i className="fa fa-expand card__icon"></i>
+          <FontAwesomeIcon icon={faExpand} className="card__icon"/>
         </span>
         <p className="card__text">Meterage :{meterage} </p>
         <span className="">
-          <i className="fa fa-key card__icon"></i>
+          <FontAwesomeIcon icon={faKey} className="card__icon"/>
         </span>
         <p className="card__text">price: {price != null ? new Intl.NumberFormat('en-US').format(price):''} $ </p>
       </div>

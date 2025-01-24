@@ -1,6 +1,6 @@
 import React from "react";
-import { faBarChart, faEye, faGlobe, faKey, faLock, faMarker, faTrophy } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBarChart,  faGlobe, faKey, faLock, faMarker, faTrophy } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Features() {
   return (
     <div className="featurs">
