@@ -1,23 +1,25 @@
 import React from "react";
-
+import { faBarChart, faEye, faGlobe, faKey, faLock, faMarker, faTrophy } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Features() {
   return (
     <div className="featurs">
       <div className="featur">
         <span className="featur__icon">
-          <i className="fa fa-globe"></i>
+        <FontAwesomeIcon icon={faGlobe} />
         </span>
         <h4 className="u-heading--dark">The best luxury homes in the world </h4>
         <p className="u-paragraph">
           The next thing about the Lorem Ipsum fake text is that some website
           designers and graphic artists, after they have created the template
-          and content they want,
+          and content they want
+         
         </p>
       </div>
 
       <div className="featur">
         <span className="featur__icon">
-          <i className="fa fa-map-marker"></i>
+          <FontAwesomeIcon icon={faMarker} />
         </span>
         <h4 className="u-heading--dark">All homes in prime locations</h4>
         <p className="u-paragraph">
@@ -27,7 +29,7 @@ function Features() {
       </div>
       <div className="featur">
         <span className="featur__icon">
-          <i className="fa fa-key"></i>
+           <FontAwesomeIcon icon={faKey} />
         </span>
         <h4 className="u-heading--dark">New house in a week</h4>
         <p className="u-paragraph">
@@ -38,7 +40,7 @@ function Features() {
       </div>
       <div className="featur">
         <span className="featur__icon">
-          <i className="fa fa-bar-chart-o"></i>
+          <FontAwesomeIcon icon={faBarChart} />
         </span>
         <h4 className="u-heading--dark">Only the best properties</h4>
         <p className="u-paragraph">
@@ -49,7 +51,7 @@ function Features() {
       </div>
       <div className="featur">
         <span className="featur__icon">
-          <i className="fa fa-lock"></i>
+          <FontAwesomeIcon icon={faLock} />
         </span>
         <h4 className="u-heading--dark">Secure payments in the future</h4>
         <p className="u-paragraph">
@@ -61,7 +63,7 @@ function Features() {
       </div>
       <div className="featur">
         <span className="featur__icon">
-          <i className="fa fa-trophy"></i>
+          <FontAwesomeIcon icon={faTrophy} />
         </span>
         <h4 className="u-heading--dark">Top 1% Real Estate Agents</h4>
         <p className="u-paragraph">

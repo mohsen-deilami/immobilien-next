@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import db from "../../data/db.json";
 import Home from "@/components/madules/Home";
 export default function index() {
