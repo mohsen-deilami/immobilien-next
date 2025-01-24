@@ -6,22 +6,39 @@ export default function index() {
     const [sort, setSort]=useState('');
 
     const searchHadler=searchValue=>{
-        setHomes(db.homes.filter(home => home.title.toLowerCase().includes(searchValue)));
+        const newHomes=db.homes.filter(home => home.title.toLowerCase().includes(searchValue))
+        setHomes(newHomes);
  
     }
     const selectHandler=(value)=>{
         setSort(value);
         console.log(sort)
+        switch (value){
+            case 'price' :{
+                const result=db.homes.sort((a,b)=>a.price - b.price);
+                setHomes(result)
+
+                break
+            }
+            case 'rooms' :{
+                break
+            }
+            case 'metrage' :{
+                break
+            }
+            default :{
+                break
+            }
+        }
     }
   return (
     <div className="home-section" id="houses">
     <div className="home-filter-search">
         <div className="home-filter">
-            <select name="" id="" onChange={event=>selectHandler(event.target.value)}>
+            <select name="" id="" defaultValue='selected' onChange={event=>selectHandler(event.target.value)}>
                 <option value="-1" >Select</option>
                 <option value="price">Based on price</option>
                 <option value="rooms">Based on the number of rooms</option>
-                <option value="address">Based on address</option>
                 <option value="metrage">Based on size</option>
             </select>
         </div>
