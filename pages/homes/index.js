@@ -4,7 +4,6 @@ import db from "../../data/db.json";
 import Home from "@/components/madules/Home";
 export default function index() {
   const [homes, setHomes] = useState(db.homes);
-
   const searchHadler = (searchValue) => {
     const newHomes = db.homes.filter((home) =>
       home.title.toLowerCase().includes(searchValue)
@@ -35,6 +34,13 @@ export default function index() {
       }
     }
   };
+
+  const selectPage=pageNumber=>{
+    console.log(pageNumber);
+    const endIndex=(pageNumber * 6) ;
+    const startIndex=endIndex - 6;
+    setHomes(db.homes.slice(startIndex , endIndex))
+  }
   return (
     <div className="home-section" id="houses">
       <div className="home-filter-search">
@@ -68,13 +74,17 @@ export default function index() {
           <Home key={home.id} {...home} />
         ))}
       </div>
+
       <ul className="pagination__list">
-        <li className="pagination__item">
-          <a href="#" className="">
-            {" "}
+      {Array.from({length:Math.ceil( db.homes?.length / 6)}).map((item , index ) =>(
+        <li className="pagination__item" key={index} >
+          <a href="#" className="" onClick={event=>selectPage(event.target.innerHTML)}>
+           {index+1}
           </a>
         </li>
-        <li className="pagination__item">
+
+      ))}
+       {/*  <li className="pagination__item">
           <a href="#" className="">
             2
           </a>
@@ -83,7 +93,7 @@ export default function index() {
           <a href="#" className="">
             1
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
