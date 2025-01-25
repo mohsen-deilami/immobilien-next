@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-
 import db from "../../data/db.json";
 import Home from "@/components/madules/Home";
 export default function index() {
   const [homes, setHomes] = useState(db.homes);
+  const [pageNumber , setPageNumber]=useState(1)
   const searchHadler = (searchValue) => {
     const newHomes = db.homes.filter((home) =>
       home.title.toLowerCase().includes(searchValue)
@@ -35,11 +35,13 @@ export default function index() {
     }
   };
 
-  const selectPage=pageNumber=>{
-    console.log(pageNumber);
-    const endIndex=(pageNumber * 6) ;
-    const startIndex=endIndex - 6;
-    setHomes(db.homes.slice(startIndex , endIndex))
+  const selectPage=(event,page)=>{
+    event.preventDefault();
+   console.log(page);
+   setPageNumber(page)
+    const endIndex=(page * 3) ;
+    const startIndex=endIndex - 3;
+    setHomes(db.homes.slice(startIndex , endIndex));
   }
   return (
     <div className="home-section" id="houses">
@@ -70,30 +72,21 @@ export default function index() {
             There are no results for your search......
           </p>
         )}
-        {homes.map((home) => (
+        {homes.slice(0,3).map((home) => (
           <Home key={home.id} {...home} />
         ))}
       </div>
 
       <ul className="pagination__list">
-      {Array.from({length:Math.ceil( db.homes?.length / 6)}).map((item , index ) =>(
-        <li className="pagination__item" key={index} >
-          <a href="#" className="" onClick={event=>selectPage(event.target.innerHTML)}>
+      {Array.from({length:Math.ceil( db.homes?.length / 3)}).map((item , index) =>(
+        <li className={ (index +1) === pageNumber ? "pagination__item active " : "pagination__item"  } key={index} >
+          <a href="#" className="" onClick={event=>selectPage(event,index+1)}>
            {index+1}
           </a>
         </li>
 
       ))}
-       {/*  <li className="pagination__item">
-          <a href="#" className="">
-            2
-          </a>
-        </li>
-        <li className="pagination__item active">
-          <a href="#" className="">
-            1
-          </a>
-        </li> */}
+    
       </ul>
     </div>
   );

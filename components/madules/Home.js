@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExpand, faHeart, faKey, faLocationDot, faMapMarker, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faExpand, faHeart, faKey, faLocationDot, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home({id ,img ,  title,   location,  roomCount,  meterage,    price}) {
   return (
@@ -38,6 +38,7 @@ export default function Home({id ,img ,  title,   location,  roomCount,  meterag
       <Link href={`/homes/${id}`} className="btn btn-brown btn-card">
         View
       </Link>
+     
     </div>
   );
 }
